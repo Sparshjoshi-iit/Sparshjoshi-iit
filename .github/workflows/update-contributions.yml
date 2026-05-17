@@ -18,13 +18,19 @@ jobs:
       - name: Fetch yearly contribution count via GitHub GraphQL API
         id: contributions
         run: |
+          # Rolling 365-day window — matches what GitHub shows on your profile
+          FROM_DATE=$(date -u -d "365 days ago" +"%Y-%m-%dT00:00:00Z")
+          TO_DATE=$(date -u +"%Y-%m-%dT23:59:59Z")
+
+          echo "Fetching contributions from $FROM_DATE to $TO_DATE"
+
           RESPONSE=$(curl -s \
             -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Content-Type: application/json" \
             -X POST \
-            -d '{
-              "query": "{ user(login: \"Sparshjoshi-iit\") { contributionsCollection { contributionCalendar { totalContributions } } } }"
-            }' \
+            -d "{
+              \"query\": \"{ user(login: \\\"Sparshjoshi-iit\\\") { contributionsCollection(from: \\\"$FROM_DATE\\\", to: \\\"$TO_DATE\\\") { contributionCalendar { totalContributions } } } }\"
+            }" \
             https://api.github.com/graphql)
 
           echo "GraphQL response: $RESPONSE"
@@ -41,7 +47,6 @@ jobs:
       - name: Update badge in README
         run: |
           COUNT=${{ steps.contributions.outputs.count }}
-          # Replaces the number between CONTRIBUTIONS_BADGE markers
           sed -i "s|Contributions%20Last%20Year-[0-9]*-00c853|Contributions%20Last%20Year-${COUNT}-00c853|g" README.md
           echo "Updated README with count: $COUNT"
 
