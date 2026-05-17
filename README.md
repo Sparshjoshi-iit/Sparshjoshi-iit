@@ -141,6 +141,11 @@ me.say_hi()
 
 <div align="center">
 
+<!-- CONTRIBUTIONS_BADGE -->
+![Contributions Last Year](https://img.shields.io/badge/Contributions%20Last%20Year-294-00c853?style=for-the-badge&logo=github&logoColor=white)
+<!-- /CONTRIBUTIONS_BADGE -->
+
+
 <img src="https://github-readme-stats.vercel.app/api?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true" height="180"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="180"/>
 
