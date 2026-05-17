@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="https://www.iitmandi.ac.in">
-    <img src="https://img.shields.io/badge/IIT%20Mandi-BTech%20Student-003580?style=for-the-badge&logo=academia&logoColor=white" />
+    <img src="https://img.shields.io/badge/IIT%20Mandi-BTech%20Student-003580?style=for-the-badge&logoColor=white" />
   </a>
 </div>
 
@@ -142,7 +142,7 @@ me.say_hi()
 <div align="center">
 
 <!-- CONTRIBUTIONS_BADGE -->
-![Contributions Last Year](https://img.shields.io/badge/Contributions%20Last%20Year-97-00c853?style=for-the-badge&logo=github&logoColor=white)
+![Contributions Last Year](https://img.shields.io/badge/Contributions%20Last%20Year-294-00c853?style=for-the-badge&logo=github&logoColor=white)
 <!-- /CONTRIBUTIONS_BADGE -->
 
 
