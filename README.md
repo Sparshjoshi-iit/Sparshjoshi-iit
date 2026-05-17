@@ -151,7 +151,7 @@ me.say_hi()
 
 <br/>
 
-![](https://streak-stats.demolab.com/?user=Sparshjoshi-iit&theme=dark&hide_border=false)
+![GitHub Stats](./streak-card.svg)
 
 </div>
 
