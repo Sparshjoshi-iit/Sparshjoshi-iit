@@ -1,12 +1,12 @@
-name: Update Contribution Count
+name: Update Contribution Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual trigger from Actions tab
+    - cron: "0 0 * * *"   # Every day at midnight UTC
+  workflow_dispatch:        # Manual trigger from Actions tab
 
 jobs:
-  update-contributions:
+  update-stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,47 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch yearly contribution count via GitHub GraphQL API
-        id: contributions
+      - name: Run stats generator
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python3 .github/scripts/generate_stats.py
+
+      - name: Update last-year badge in README
         run: |
-          # Rolling 365-day window — matches what GitHub shows on your profile
-          FROM_DATE=$(date -u -d "365 days ago" +"%Y-%m-%dT00:00:00Z")
-          TO_DATE=$(date -u +"%Y-%m-%dT23:59:59Z")
+          source .contribution_counts
+          echo "Last year count: $LAST_YEAR"
+          sed -i "s|Contributions%20Last%20Year-[0-9]*-00c853|Contributions%20Last%20Year-${LAST_YEAR}-00c853|g" README.md
 
-          echo "Fetching contributions from $FROM_DATE to $TO_DATE"
-
-          RESPONSE=$(curl -s \
-            -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -X POST \
-            -d "{
-              \"query\": \"{ user(login: \\\"Sparshjoshi-iit\\\") { contributionsCollection(from: \\\"$FROM_DATE\\\", to: \\\"$TO_DATE\\\") { contributionCalendar { totalContributions } } } }\"
-            }" \
-            https://api.github.com/graphql)
-
-          echo "GraphQL response: $RESPONSE"
-
-          COUNT=$(echo "$RESPONSE" | python3 -c "
-          import sys, json
-          data = json.load(sys.stdin)
-          print(data['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
-          ")
-
-          echo "Contribution count: $COUNT"
-          echo "count=$COUNT" >> $GITHUB_OUTPUT
-
-      - name: Update badge in README
+      - name: Commit and push changes
         run: |
-          COUNT=${{ steps.contributions.outputs.count }}
-          sed -i "s|Contributions%20Last%20Year-[0-9]*-00c853|Contributions%20Last%20Year-${COUNT}-00c853|g" README.md
-          echo "Updated README with count: $COUNT"
-
-      - name: Commit and push if README changed
-        run: |
-          git config --global user.name "github-actions[bot]"
+          git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet README.md || (
-            git add README.md &&
-            git commit -m "chore: update contribution count to ${{ steps.contributions.outputs.count }} [skip ci]" &&
+          git add README.md streak-card.svg
+          git diff --staged --quiet || (
+            git commit -m "chore: update contribution stats [skip ci]" &&
             git push
           )
