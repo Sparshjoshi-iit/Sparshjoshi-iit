@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00c853,100:0d1117&height=200&section=header&text=Sparsh%20Joshi&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=AI%20%7C%20ML%20%7C%20Full-Stack%20%7C%20Cloud&descAlignY=58&descSize=20&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00c853,100:0d1117&height=200&section=header&text=Sparsh%20Joshi&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=ML%20Engineer%20%7C%20GenAI%20Builder%20%7C%20Open%20Source%20Contributor&descAlignY=58&descSize=20&animation=twinkling" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Building+Intelligent+Systems+%F0%9F%A4%96;Turning+Data+into+Decisions+%F0%9F%93%8A;Full-Stack+%2B+ML+%3D+%E2%9C%A8+Magic;Shipping+products%2C+not+just+prototypes+%F0%9F%9A%80;Always+Learning%2C+Always+Building+%F0%9F%94%A5" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=650&lines=Training+models+that+actually+generalise+%F0%9F%A7%A0;Building+with+LLMs%2C+RAG+%26+Diffusion+Models+%F0%9F%A4%96;Computer+Vision+%7C+NLP+%7C+MLOps+%F0%9F%94%AC;Open+Source+%E2%9D%A4%EF%B8%8F+%7C+Research+%7C+Production+AI;Turning+papers+into+working+systems+%F0%9F%9A%80" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -15,7 +15,6 @@
   <a href="https://github.com/Sparshjoshi-iit">
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=Sparshjoshi-iit&style=for-the-badge&color=00c853&label=PROFILE+VIEWS" />
 </div>
 
 ---
@@ -27,20 +26,15 @@ class SparshJoshi:
     def __init__(self):
         self.name        = "Sparsh Joshi"
         self.institute   = "IIT"
-        self.roles       = ["AI/ML Engineer", "Full-Stack Developer", "Cloud Enthusiast"]
-        self.languages   = ["Python", "Java", "JavaScript", "PowerShell"]
-        self.interests   = ["Machine Learning", "Computer Vision", "LLMs", "MLOps"]
-        self.stack       = {
-            "frontend"  : ["Next.js", "TailwindCSS"],
-            "backend"   : ["FastAPI", "NestJS", "Node.js", "Flask", "Express"],
-            "ml"        : ["PyTorch", "TensorFlow", "Keras", "scikit-learn"],
-            "cloud"     : ["Google Cloud", "Docker", "Kubernetes"],
-            "databases" : ["MongoDB", "MySQL"],
-        }
-        self.fun_fact    = "I spend more time naming variables than writing them 😅"
+        self.roles       = ["ML Engineer", "GenAI Builder", "Open Source Contributor"]
+        self.research    = ["Computer Vision", "NLP", "Generative AI", "MLOps"]
+        self.building    = ["RAG Pipelines", "Fine-tuned LLMs", "CV Systems", "AI Agents"]
+        self.frameworks  = ["PyTorch", "TensorFlow", "HuggingFace", "LangChain"]
+        self.philosophy  = "Bridge the gap between research papers and production systems"
+        self.fun_fact    = "I read arxiv papers the way others read the news 📄"
 
     def say_hi(self):
-        print("Thanks for stopping by! Let's build something amazing together 🚀")
+        print("Thanks for stopping by! Let's push the frontier together 🚀")
 
 me = SparshJoshi()
 me.say_hi()
@@ -50,24 +44,24 @@ me.say_hi()
 
 <table>
   <tr>
-    <td>🎓</td>
-    <td>Student at <strong>IIT</strong> — passionate about AI, systems design, and impactful tech</td>
+    <td>🧠</td>
+    <td>Deep interest in <strong>LLMs, RAG, Diffusion Models</strong> and <strong>Agentic AI</strong></td>
   </tr>
   <tr>
-    <td>🤖</td>
-    <td>Building with <strong>LLMs, Computer Vision</strong>, and <strong>ML pipelines</strong></td>
+    <td>🔬</td>
+    <td>Working on <strong>Computer Vision</strong> and <strong>NLP</strong> — from research to deployment</td>
   </tr>
   <tr>
-    <td>🛠️</td>
-    <td>Full-stack with <strong>Next.js, FastAPI, NestJS</strong> — from DB to deployment</td>
+    <td>🤗</td>
+    <td>Active with <strong>HuggingFace</strong>, open-source tools and the broader ML community</td>
   </tr>
   <tr>
-    <td>☁️</td>
-    <td>Cloud-native via <strong>GCP, Docker, Kubernetes, GitHub Actions</strong></td>
+    <td>📐</td>
+    <td>Obsessed with <strong>MLOps</strong> — clean pipelines, reproducible experiments, tracked metrics</td>
   </tr>
   <tr>
-    <td>🎨</td>
-    <td>Design-aware — <strong>Figma, Blender, Canva</strong> when the creative side kicks in</td>
+    <td>📄</td>
+    <td>Love reading and implementing <strong>research papers</strong> — from arxiv to working code</td>
   </tr>
   <tr>
     <td>📫</td>
@@ -80,7 +74,7 @@ me.say_hi()
 ## 💻 Tech Stack
 
 <details open>
-<summary><b>🧠 AI / ML</b></summary>
+<summary><b>🧠 ML / DL / GenAI</b></summary>
 <br/>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -99,7 +93,7 @@ me.say_hi()
 </details>
 
 <details open>
-<summary><b>🌐 Backend & APIs</b></summary>
+<summary><b>⚙️ Backend, APIs & Infra</b></summary>
 <br/>
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
@@ -108,46 +102,33 @@ me.say_hi()
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b>🎨 Frontend & Design</b></summary>
-<br/>
-
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b>☁️ Cloud, DevOps & DB</b></summary>
-<br/>
-
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 
 </details>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🤖 ML / DL Focus Areas
 
 <div align="center">
 
-![](https://github-profile-trophy.vercel.app/?username=Sparshjoshi-iit&theme=darkhub&no-frame=false&no-bg=false&margin-w=6&row=1)
+| 🔭 Domain | 🛠️ What I Work On |
+|---|---|
+| **Generative AI** | LLM fine-tuning, RAG pipelines, prompt engineering, AI agents |
+| **Computer Vision** | Object detection, segmentation, image classification, OpenCV |
+| **NLP** | Text classification, transformers, embeddings, semantic search |
+| **MLOps** | Experiment tracking (MLflow), model serving, CI/CD for ML |
+| **Deep Learning** | CNNs, RNNs, Transformers, GANs, Diffusion Models |
 
 </div>
 
@@ -168,25 +149,11 @@ me.say_hi()
 
 ---
 
-## 📅 Contribution History
+## 🏆 GitHub Trophies
 
 <div align="center">
 
-[![GitHub Contribution Grid](https://ghchart.rshah.org/00c853/Sparshjoshi-iit)](https://github.com/Sparshjoshi-iit)
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sparshjoshi-iit/Sparshjoshi-iit/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sparshjoshi-iit/Sparshjoshi-iit/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/Sparshjoshi-iit/Sparshjoshi-iit/output/github-contribution-grid-snake.svg" />
-</picture>
+![](https://github-profile-trophy.vercel.app/?username=Sparshjoshi-iit&theme=darkhub&no-frame=false&no-bg=false&margin-w=6&row=1)
 
 </div>
 
