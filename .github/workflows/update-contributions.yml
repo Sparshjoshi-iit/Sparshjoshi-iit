@@ -1,0 +1,56 @@
+name: Update Contribution Count
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger from Actions tab
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch yearly contribution count via GitHub GraphQL API
+        id: contributions
+        run: |
+          RESPONSE=$(curl -s \
+            -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -X POST \
+            -d '{
+              "query": "{ user(login: \"Sparshjoshi-iit\") { contributionsCollection { contributionCalendar { totalContributions } } } }"
+            }' \
+            https://api.github.com/graphql)
+
+          echo "GraphQL response: $RESPONSE"
+
+          COUNT=$(echo "$RESPONSE" | python3 -c "
+          import sys, json
+          data = json.load(sys.stdin)
+          print(data['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+          ")
+
+          echo "Contribution count: $COUNT"
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Update badge in README
+        run: |
+          COUNT=${{ steps.contributions.outputs.count }}
+          # Replaces the number between CONTRIBUTIONS_BADGE markers
+          sed -i "s|Contributions%20Last%20Year-[0-9]*-00c853|Contributions%20Last%20Year-${COUNT}-00c853|g" README.md
+          echo "Updated README with count: $COUNT"
+
+      - name: Commit and push if README changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (
+            git add README.md &&
+            git commit -m "chore: update contribution count to ${{ steps.contributions.outputs.count }} [skip ci]" &&
+            git push
+          )
