@@ -15,6 +15,9 @@
   <a href="https://github.com/Sparshjoshi-iit">
     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
   </a>
+  <a href="https://www.iitmandi.ac.in">
+    <img src="https://img.shields.io/badge/IIT%20Mandi-BTech%20Student-003580?style=for-the-badge&logo=academia&logoColor=white" />
+  </a>
 </div>
 
 ---
@@ -138,8 +141,8 @@ me.say_hi()
 
 <div align="center">
 
-<img src="https://github-readme-stats.shion.dev/api?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true" height="180"/>
-<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sparshjoshi-iit&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="180"/>
 
 <br/>
 
