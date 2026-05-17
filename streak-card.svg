@@ -1,0 +1,37 @@
+<svg width="500" height="195" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg      { fill: #1a1b27; }
+    .border  { fill: none; stroke: #2d2d3f; stroke-width: 1; }
+    .div     { stroke: #2d2d3f; stroke-width: 1; }
+    .num     { font: 700 30px 'Segoe UI', sans-serif; fill: #ffffff; }
+    .label   { font: 600 13px 'Segoe UI', sans-serif; fill: #a0a0b8; }
+    .sub     { font: 400 11px 'Segoe UI', sans-serif; fill: #555570; }
+    .s-num   { font: 700 30px 'Segoe UI', sans-serif; fill: #f97316; }
+    .s-label { font: 600 13px 'Segoe UI', sans-serif; fill: #f97316; }
+  </style>
+
+  <!-- Background & border -->
+  <rect width="500" height="195" rx="12" class="bg"/>
+  <rect width="498" height="193" x="1" y="1" rx="11" class="border"/>
+
+  <!-- Dividers -->
+  <line x1="166" y1="28" x2="166" y2="167" class="div"/>
+  <line x1="334" y1="28" x2="334" y2="167" class="div"/>
+
+  <!-- Left panel: Total Contributions -->
+  <text x="83"  y="88"  text-anchor="middle" class="num"  >501</text>
+  <text x="83"  y="110" text-anchor="middle" class="label">Total Contributions</text>
+  <text x="83"  y="127" text-anchor="middle" class="sub"  >Sep 18, 2024 - Present</text>
+
+  <!-- Middle panel: Current Streak -->
+  <circle cx="250" cy="86" r="33" fill="none" stroke="#f97316" stroke-width="3"/>
+  <text x="250" y="74"  text-anchor="middle" style="font:22px serif">🔥</text>
+  <text x="250" y="98"  text-anchor="middle" class="s-num"  >3</text>
+  <text x="250" y="138" text-anchor="middle" class="s-label">Current Streak</text>
+  <text x="250" y="154" text-anchor="middle" class="sub"    >May 15 - May 17, 2026</text>
+
+  <!-- Right panel: Longest Streak -->
+  <text x="417" y="88"  text-anchor="middle" class="num"  >11</text>
+  <text x="417" y="110" text-anchor="middle" class="label">Longest Streak</text>
+  <text x="417" y="127" text-anchor="middle" class="sub"  >Oct 08 - Oct 18, 2025</text>
+</svg>
