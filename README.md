@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00c853,100:0d1117&height=200&section=header&text=Sparsh%20Joshi&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=ML%20Engineer%20%7C%20GenAI%20Builder%20%7C%20Open%20Source%20Contributor&descAlignY=58&descSize=20&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00c853,100:0d1117&height=200&section=header&text=Sparsh%20Joshi&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=ML%20Enthusiast%20%7C%20GenAI%20Builder%20%7C%20Open%20Source%20Contributor&descAlignY=58&descSize=20&animation=twinkling" />
 </div>
 
 <div align="center">
@@ -26,7 +26,7 @@ class SparshJoshi:
     def __init__(self):
         self.name        = "Sparsh Joshi"
         self.institute   = "IIT"
-        self.roles       = ["ML Engineer", "GenAI Builder", "Open Source Contributor"]
+        self.roles       = ["BTech @ IIT Mandi", "ML Enthusiast", "GenAI Builder", "Open Source Contributor"]
         self.research    = ["Computer Vision", "NLP", "Generative AI", "MLOps"]
         self.building    = ["RAG Pipelines", "Fine-tuned LLMs", "CV Systems", "AI Agents"]
         self.frameworks  = ["PyTorch", "TensorFlow", "HuggingFace", "LangChain"]
