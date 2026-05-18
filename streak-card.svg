@@ -19,7 +19,7 @@
   <line x1="334" y1="28" x2="334" y2="167" class="div"/>
 
   <!-- Left panel: Total Contributions -->
-  <text x="83"  y="88"  text-anchor="middle" class="num"  >501</text>
+  <text x="83"  y="88"  text-anchor="middle" class="num"  >506</text>
   <text x="83"  y="110" text-anchor="middle" class="label">Total Contributions</text>
   <text x="83"  y="127" text-anchor="middle" class="sub"  >Sep 18, 2024 - Present</text>
 
