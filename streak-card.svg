@@ -26,9 +26,9 @@
   <!-- Middle panel: Current Streak -->
   <circle cx="250" cy="86" r="33" fill="none" stroke="#f97316" stroke-width="3"/>
   <text x="250" y="74"  text-anchor="middle" style="font:22px serif">🔥</text>
-  <text x="250" y="98"  text-anchor="middle" class="s-num"  >3</text>
+  <text x="250" y="98"  text-anchor="middle" class="s-num"  >0</text>
   <text x="250" y="138" text-anchor="middle" class="s-label">Current Streak</text>
-  <text x="250" y="154" text-anchor="middle" class="sub"    >May 21 - May 23, 2026</text>
+  <text x="250" y="154" text-anchor="middle" class="sub"    >May 24, 2026</text>
 
   <!-- Right panel: Longest Streak -->
   <text x="417" y="88"  text-anchor="middle" class="num"  >11</text>
