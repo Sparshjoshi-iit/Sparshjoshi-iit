@@ -19,16 +19,16 @@
   <line x1="334" y1="28" x2="334" y2="167" class="div"/>
 
   <!-- Left panel: Total Contributions -->
-  <text x="83"  y="88"  text-anchor="middle" class="num"  >529</text>
+  <text x="83"  y="88"  text-anchor="middle" class="num"  >532</text>
   <text x="83"  y="110" text-anchor="middle" class="label">Total Contributions</text>
   <text x="83"  y="127" text-anchor="middle" class="sub"  >Sep 18, 2024 - Present</text>
 
   <!-- Middle panel: Current Streak -->
   <circle cx="250" cy="86" r="33" fill="none" stroke="#f97316" stroke-width="3"/>
   <text x="250" y="74"  text-anchor="middle" style="font:22px serif">🔥</text>
-  <text x="250" y="98"  text-anchor="middle" class="s-num"  >0</text>
+  <text x="250" y="98"  text-anchor="middle" class="s-num"  >1</text>
   <text x="250" y="138" text-anchor="middle" class="s-label">Current Streak</text>
-  <text x="250" y="154" text-anchor="middle" class="sub"    >May 24, 2026</text>
+  <text x="250" y="154" text-anchor="middle" class="sub"    >May 25, 2026</text>
 
   <!-- Right panel: Longest Streak -->
   <text x="417" y="88"  text-anchor="middle" class="num"  >11</text>
