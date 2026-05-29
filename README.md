@@ -142,7 +142,7 @@ me.say_hi()
 <div align="center">
 
 <!-- CONTRIBUTIONS_BADGE -->
-![Contributions Last Year](https://img.shields.io/badge/Contributions%20Last%20Year-306-00c853?style=for-the-badge&logo=github&logoColor=white)
+![Contributions Last Year](https://img.shields.io/badge/Contributions%20Last%20Year-305-00c853?style=for-the-badge&logo=github&logoColor=white)
 <!-- /CONTRIBUTIONS_BADGE -->
 
 
